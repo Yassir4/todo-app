@@ -1,4 +1,5 @@
 import React from 'react'
+import FlipMove from 'react-flip-move';
 
 function TaskItem(props) {
     var entries = props.items;
@@ -13,7 +14,9 @@ function TaskItem(props) {
     return (
         <div className='taskItem'>
             <ul>
+            <FlipMove>
                 {listItems}
+            </FlipMove>
             </ul>
         </div>
     );
