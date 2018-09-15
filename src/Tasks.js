@@ -18,11 +18,12 @@ class Tasks extends React.Component {
         if (this.newTask.value !== "") {
             var newTask = {
                 text: this.newTask.value,
-                id: Date.now(),
+                key: Date.now(),
             }
             this.setState((state) => ({
                 tasks: [...state.tasks, newTask]
             }))
+            this.newTask.value = '';
         }
     }
 
