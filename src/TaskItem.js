@@ -15,13 +15,11 @@ function TaskItem(props) {
     );
     return (
         <div className='taskItem'>
-
             <ul>
-                <FlipMove>
+                <FlipMove easing='ease-out'>
                     {listItems}
                 </FlipMove>
             </ul>
-
         </div>
     );
 
