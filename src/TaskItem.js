@@ -10,7 +10,9 @@ function TaskItem(props) {
 
         <li key={item.id} onClick={() => { deleteItem(item.key) }}>
             {item.text}
+            <i class="far fa-edit"></i>
         </li>
+        
 
     );
     return (
