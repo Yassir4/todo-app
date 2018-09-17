@@ -155,16 +155,18 @@ div.taskItem li{
   border-radius: 5px;
   list-style: none;
   display: flex;
-  justify-content: space-between;
+}
+
+li p{
+  margin: 0;
 }
 li .far{
-  text-align: right;
+  padding: 0 5px 0 5px;
+}
+li #icons{
+  margin-left: auto;
 }
 li .far:hover{
   cursor: pointer;
   background-color: #B7B7B7;
-}
-div.taskItem li:hover{
-  /* cursor: pointer;
-  background-color: #B7B7B7; */
 }

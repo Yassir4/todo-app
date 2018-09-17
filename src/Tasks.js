@@ -68,9 +68,9 @@ class Tasks extends React.Component {
     }
 
     removeItem = key => {
-        // this.setState({
-        //     tasks: this.state.tasks.filter(item => item.key !== key)
-        // })
+        this.setState({
+            tasks: this.state.tasks.filter(item => item.key !== key)
+        })
     }
 
     render() {

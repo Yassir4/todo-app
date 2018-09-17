@@ -11,11 +11,14 @@ function TaskItem(props) {
     }
     var listItems = entries.map((item) =>
 
-        <li key={item.id} onClick={() => { deleteItem(item.key) }}>
-            {item.text}
-            <i class="far fa-edit" onClick={() => {updateItem(item)}} ></i>
+        <li key={item.id}>
+            <p>{item.text}</p>
+            <div id='icons'>
+                <i class="far fa-edit" onClick={() => { updateItem(item) }} ></i>
+                <i class="far fa-trash-alt" onClick={() => { deleteItem(item.key) }}></i>
+            </div>
         </li>
-        
+
 
     );
     return (
