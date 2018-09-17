@@ -6,11 +6,14 @@ function TaskItem(props) {
     var deleteItem = (key) => {
         props.removeItem(key);
     };
+    var updateItem = (item) => {
+        props.updateItem(item);
+    }
     var listItems = entries.map((item) =>
 
         <li key={item.id} onClick={() => { deleteItem(item.key) }}>
             {item.text}
-            <i class="far fa-edit"></i>
+            <i class="far fa-edit" onClick={() => {updateItem(item)}} ></i>
         </li>
         
 

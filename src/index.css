@@ -154,9 +154,17 @@ div.taskItem li{
   margin-bottom: 15px;
   border-radius: 5px;
   list-style: none;
-
+  display: flex;
+  justify-content: space-between;
 }
-div.taskItem li:hover{
+li .far{
+  text-align: right;
+}
+li .far:hover{
   cursor: pointer;
   background-color: #B7B7B7;
+}
+div.taskItem li:hover{
+  /* cursor: pointer;
+  background-color: #B7B7B7; */
 }
