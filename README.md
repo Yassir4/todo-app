@@ -1,7 +1,7 @@
 # Todo App
 
 A simple Todo app built with React
-![alt-text](https://github.com/Yassir4/todo-app/blob/master/React-Todo.2018-09-15%2020_59_55.gif) 
+![alt-text](https://github.com/Yassir4/todo-app/blob/master/todo-demo.gif) 
 ## Getting Started
 
 First, clone the repo
